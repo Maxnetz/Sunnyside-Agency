@@ -1,9 +1,10 @@
 import "./styles/App.scss";
+import Nav from "./components/Nav/Banner";
 
 function App() {
     return (
         <div className="App">
-            <h1>Hello Worlds</h1>
+            <Nav />
         </div>
     );
 }
