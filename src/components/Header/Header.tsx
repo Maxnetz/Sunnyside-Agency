@@ -1,12 +1,11 @@
-import React from "react";
-import "./Banner.scss";
+import "./Header.scss";
 import logo from "../../assets/images/logo.svg";
 import ArrowDown from "../../assets/images/icons/icon-arrow-down.svg";
 import DesktopBannerImage from "../../assets/images/desktop/image-header.jpg";
 
-const Banner = () => {
+const Header = () => {
     return (
-        <div className="Banner">
+        <div className="Header">
             <img src={DesktopBannerImage} alt="banner-img" />
             <div className="Nav">
                 <div className="logo__container">
@@ -31,10 +30,13 @@ const Banner = () => {
 
             <div className="Hero__Container">
                 <h1>WE ARE CREATIVES</h1>
-                <img src={ArrowDown} alt="ArrowDown" />
+                <img
+                    src={ArrowDown}
+                    alt="ArrowDown"
+                />
             </div>
         </div>
     );
 };
 
-export default Banner;
+export default Header;
