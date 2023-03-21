@@ -1,13 +1,13 @@
 import React from "react";
 import "./Banner.scss";
 import logo from "../../assets/images/logo.svg";
+import ArrowDown from "../../assets/images/icons/icon-arrow-down.svg";
 import DesktopBannerImage from "../../assets/images/desktop/image-header.jpg";
 
 const Banner = () => {
     return (
         <div className="Banner">
-            {/* <img src={DesktopBannerImage} alt="banner-img" /> */}
-
+            <img src={DesktopBannerImage} alt="banner-img" />
             <div className="Nav">
                 <div className="logo__container">
                     <img src={logo} alt="logo" />
@@ -27,6 +27,11 @@ const Banner = () => {
                         <button>CONTACT</button>
                     </li>
                 </ul>
+            </div>
+
+            <div className="Hero__Container">
+                <h1>WE ARE CREATIVES</h1>
+                <img src={ArrowDown} alt="ArrowDown" />
             </div>
         </div>
     );

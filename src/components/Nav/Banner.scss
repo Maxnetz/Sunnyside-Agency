@@ -1,14 +1,13 @@
 @import "../../styles/variables.scss";
 
 .Banner {
-    padding: 34px 48px 0 40px;
-    background-color: $very-dark-desaturated-blue;
-
     & > img {
         width: 100%;
+        position: absolute;
     }
 
     .Nav {
+        padding: 34px 48px 0 40px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -50,8 +49,8 @@
                     width: 140px;
                     height: 56px;
                     border-radius: 28px;
-                    font-family: "Fraunces", serif;
-                    font-size: 18px;
+                    font-family: "Barlow", sans-serif;
+                    font-size: 15px;
 
                     &:hover {
                         color: $white;
@@ -59,6 +58,22 @@
                     }
                 }
             }
+        }
+    }
+
+    .Hero__Container {
+        width: 100%;
+        position: relative;
+        margin-top: 100px;
+        font-family: "Fraunces", serif;
+        font-size: 55px;
+        font-weight: 900;
+        text-align: center;
+        letter-spacing: 55px * 0.2;
+        color: $white;
+
+        img {
+            margin-top: 200px;
         }
     }
 }
