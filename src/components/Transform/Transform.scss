@@ -1,0 +1,90 @@
+@import "../../styles/variables";
+
+.transform-text {
+    grid-area: transform-text;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > div {
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        @media screen and (max-width: 1000px) {
+            width: 90%;
+        }
+
+        @media screen and (max-width: $break-point) {
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    h2 {
+        font-family: "Fraunces", serif;
+        font-weight: 900;
+        font-size: 40px;
+        letter-spacing: 40px * 0.01;
+        color: $very-dark-desaturated-blue;
+    }
+
+    p {
+        font-family: "Barlow", sans-serif;
+        font-size: 18px;
+        letter-spacing: 18px * (-0.007);
+        line-height: 160%;
+        color: $dark-grayish-blue;
+        margin: 40px 0 45px 0;
+    }
+
+    a {
+        font-family: "Fraunces", serif;
+        font-size: 15px;
+        font-weight: 900;
+        letter-spacing: 15px * (0.08);
+        color: $very-dark-desaturated-blue;
+        text-decoration: none;
+        position: relative;
+        margin-left: 5px;
+
+        &:before {
+            content: "";
+            width: 110%;
+            height: 10px;
+            background-color: rgba($yellow, 0.5);
+            display: inline-block;
+            position: absolute;
+            left: 50%;
+            bottom: -3px;
+            transform: translateX(-50%);
+            z-index: -1;
+            border-radius: 50px;
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            -ms-border-radius: 50px;
+            -o-border-radius: 50px;
+            transition: background-color 0.3s ease-in-out;
+            -webkit-transition: background-color 0.3s ease-in-out;
+            -moz-transition: background-color 0.3s ease-in-out;
+            -ms-transition: background-color 0.3s ease-in-out;
+            -o-transition: background-color 0.3s ease-in-out;
+        }
+
+        &:hover::before {
+            background-color: rgba($yellow, 0.8);
+        }
+    }
+}
+
+.transform-image {
+    grid-area: transform-image;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}

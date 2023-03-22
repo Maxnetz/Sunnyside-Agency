@@ -1,9 +1,12 @@
 @import "../../styles/variables.scss";
 
 .Header {
+    grid-area: header;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    
 
     & > img:first-of-type {
         width: 100%;
@@ -12,7 +15,8 @@
         position: absolute;
         top: 0;
         left: 0;
-        z-index: -1;
+        z-index: -100;
+       
     }
 
     .Nav {
@@ -22,6 +26,7 @@
         align-items: center;
         width: 100%;
         position: relative;
+        z-index: 100;
 
         .logo__container {
             img {
@@ -103,6 +108,7 @@
                     -ms-transform: translateY(0);
                     -o-transform: translateY(0);
                 }
+
                 50% {
                     transform: translateY(30px);
                     -webkit-transform: translateY(30px);
@@ -110,6 +116,7 @@
                     -ms-transform: translateY(30px);
                     -o-transform: translateY(30px);
                 }
+
                 100% {
                     transform: translateY(0);
                     -webkit-transform: translateY(0);

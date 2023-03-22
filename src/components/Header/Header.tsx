@@ -7,6 +7,7 @@ const Header = () => {
     return (
         <div className="Header">
             <img src={DesktopBannerImage} alt="banner-img" />
+
             <div className="Nav">
                 <div className="logo__container">
                     <img src={logo} alt="logo" />
@@ -30,10 +31,7 @@ const Header = () => {
 
             <div className="Hero__Container">
                 <h1>WE ARE CREATIVES</h1>
-                <img
-                    src={ArrowDown}
-                    alt="ArrowDown"
-                />
+                <img src={ArrowDown} alt="ArrowDown" />
             </div>
         </div>
     );
