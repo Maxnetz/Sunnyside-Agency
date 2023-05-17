@@ -5,41 +5,8 @@
     padding: 0;
     box-sizing: border-box;
     outline: none;
-    border: 0.5px solid red;
 }
 
 li {
     list-style: none;
-}
-
-.App {
-    display: grid;
-    grid-template-columns: repeat(4, 25vw);
-    grid-template-rows: 918px 600px 600px 600px 777px 447px 350px;
-    grid-template-areas:
-        "header header header header"
-        "transform-text transform-text transform-image transform-image"
-        // name urself
-        "stand-out-image stand-out-image stand-out-text stand-out-text"
-        "graphic-design graphic-design photography photography"
-        "testimonials testimonials testimonials testimonials"
-        "milk-bottles orange cone sugar-cubes"
-        "footer footer footer footer";
-
-    @media screen and (max-width: $break-point) {
-        grid-template-columns: repeat(2, 50vw);
-        grid-template-rows: 538px 313px 437px 313px 437px 600px 600px 1260px 188px 188px 350px;
-        grid-template-areas:
-            "banner banner"
-            "transform-image transform-image"
-            "transform-text transform-text"
-            "stand-out-image stand-out-image"
-            "stand-out-text stand-out-text"
-            "graphic-design graphic-design"
-            "photography photography"
-            "testimonials testimonials"
-            "milk-bottles orange"
-            "cone sugar-cubes"
-            "footer footer";
-    }
 }

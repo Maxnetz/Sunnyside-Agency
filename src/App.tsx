@@ -1,15 +1,12 @@
 import "./styles/App.scss";
 
 // Components
-import Header from "./components/Header/Header";
-import Transform from "./components/Transform/Transform";
+import Banner from "./components/Banner/Banner";
 
 function App() {
     return (
         <div className="App">
-            <Header />
-            <Transform />
-          
+            <Banner />
         </div>
     );
 }

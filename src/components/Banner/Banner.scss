@@ -1,0 +1,26 @@
+@import "../../../src/styles/variables.scss";
+
+.banner {
+    background-color: blue;
+    height: 100vh;
+    background-image: url(../../assets/images/desktop/image-header.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+
+    .main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        font-size: 70px;
+        font-weight: bold;
+        flex-grow: 1;
+        color: $white;
+
+        .arrow {
+            margin-top: 60px;
+        }
+    }
+}
