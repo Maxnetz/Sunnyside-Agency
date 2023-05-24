@@ -3,6 +3,7 @@ import "./Header.scss";
 // assests
 import logo from "../../assets/images/logo.svg";
 
+// Header is used in Banner
 const Header = () => {
     return (
         <div className="header">
