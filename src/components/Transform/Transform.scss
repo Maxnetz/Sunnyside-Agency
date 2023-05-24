@@ -17,7 +17,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #fffbf8;
 
         .transform__text--container {
             width: 70%;
@@ -37,18 +36,40 @@
         }
 
         a {
+            font-family: "Fraunces", serif;
+            font-size: 15px;
+            font-weight: 900;
+            letter-spacing: 15px * (0.08);
+            color: $very-dark-desaturated-blue;
             text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
+            position: relative;
+            margin-left: 5px;
 
-            &:hover {
-                text-decoration: underline;
-                text-decoration-color: #f8d409;
-                text-decoration-thickness: 4px;
+            &::before {
+                content: "";
+                width: 110%;
+                height: 10px;
+                background-color: rgba($yellow, 0.3);
+                display: inline-block;
+                position: absolute;
+                left: 50%;
+                bottom: -3px;
+                transform: translateX(-50%);
+                z-index: -1;
+                border-radius: 50px;
+                -webkit-border-radius: 50px;
+                -moz-border-radius: 50px;
+                -ms-border-radius: 50px;
+                -o-border-radius: 50px;
+                transition: background-color 0.3s ease-in-out;
+                -webkit-transition: background-color 0.3s ease-in-out;
+                -moz-transition: background-color 0.3s ease-in-out;
+                -ms-transition: background-color 0.3s ease-in-out;
+                -o-transition: background-color 0.3s ease-in-out;
             }
 
-            &:visited {
-                color: black;
+            &:hover::before {
+                background-color: rgba($yellow, 0.8);
             }
         }
     }

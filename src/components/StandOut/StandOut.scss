@@ -12,7 +12,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #fffbf8;
 
         .standout__text--container {
             width: 70%;
@@ -32,18 +31,40 @@
         }
 
         a {
+            font-family: "Fraunces", serif;
+            font-size: 15px;
+            font-weight: 900;
+            letter-spacing: 15px * (0.08);
+            color: blue;
             text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
+            position: relative;
+            margin-left: 5px;
 
-            &:hover {
-                text-decoration: underline;
-                text-decoration-color: #ff7d6d;
-                text-decoration-thickness: 4px;
+            &:before {
+                content: "";
+                width: 110%;
+                height: 10px;
+                background-color: rgba($soft-red, 0.3);
+                display: inline-block;
+                position: absolute;
+                left: 50%;
+                bottom: -3px;
+                z-index: -1;
+                transform: translateX(-50%);
+                border-radius: 50px;
+                -webkit-border-radius: 50px;
+                -moz-border-radius: 50px;
+                -ms-border-radius: 50px;
+                -o-border-radius: 50px;
+                transition: background-color 0.3s ease-in-out;
+                -webkit-transition: background-color 0.3s ease-in-out;
+                -moz-transition: background-color 0.3s ease-in-out;
+                -ms-transition: background-color 0.3s ease-in-out;
+                -o-transition: background-color 0.3s ease-in-out;
             }
 
-            &:visited {
-                color: black;
+            &:hover::before {
+                background-color: rgba($soft-red, 0.9);
             }
         }
     }
