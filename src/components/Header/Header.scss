@@ -7,6 +7,10 @@
     justify-content: space-between;
     padding: 20px 20px 0 20px;
 
+    img {
+        cursor: pointer;
+    }
+
     .header__menu {
         display: flex;
         justify-content: space-around;
@@ -24,14 +28,15 @@
         }
 
         .menu__button--contact {
+            font-family: "Fraunces", serif;
             background-color: $white;
             color: $very-dark-desaturated-blue;
             padding: 8px 30px;
             border-radius: 20px;
             cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
 
             &:hover {
-                color: $white;
                 background-color: rgba($white, 0.3);
             }
         }
