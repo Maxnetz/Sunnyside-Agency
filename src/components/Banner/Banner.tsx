@@ -11,7 +11,9 @@ const Banner = () => {
 
             <div className="main">
                 <span className="main__text">WE ARE CREATIVES</span>
-                <img src={arrowDown} alt="arrowDown" className="arrow" />
+                <a href="#transform">
+                    <img src={arrowDown} alt="arrowDown" className="arrow" />
+                </a>
             </div>
         </div>
     );
