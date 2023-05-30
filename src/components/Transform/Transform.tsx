@@ -5,7 +5,7 @@ import egg from "../../assets/images/desktop/image-transform.jpg";
 
 const Transform = () => {
     return (
-        <div className="transform">
+        <div className="transform" id="transform">
             <div className="transform__left--text">
                 <div className="transform__text--container">
                     <h1>Transform your brand</h1>
