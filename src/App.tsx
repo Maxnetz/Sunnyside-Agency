@@ -4,6 +4,7 @@ import "./styles/App.scss";
 import Banner from "./components/Banner/Banner";
 import Transform from "./components/Transform/Transform";
 import StandOut from "./components/StandOut/StandOut";
+import GraphicDesign from "./components/GraphicDesign/GraphicDesign";
 
 function App() {
     return (
@@ -11,6 +12,7 @@ function App() {
             <Banner />
             <Transform />
             <StandOut />
+            <GraphicDesign />
         </div>
     );
 }

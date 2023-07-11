@@ -2,10 +2,11 @@
 
 .standout {
     display: flex;
+    justify-content: space-between;
 
     img {
         width: 100%;
-        display: block;
+        display: block;   
     }
 
     .standout__right--text {

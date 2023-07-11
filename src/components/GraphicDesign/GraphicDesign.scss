@@ -1,0 +1,20 @@
+@import "../../../src/styles/variables.scss";
+
+.graphic-design {
+    display: flex;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .graphic-design--right {
+        flex: 1;
+    }
+
+    .graphic-design--left {
+        flex: 1;
+    }
+}
